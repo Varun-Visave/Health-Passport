@@ -1,0 +1,70 @@
+/* Neumorphic Styling for Health Passport Component */
+:root {
+    --bg-color: #f5f5f5;
+    --primary-color: #e0e0e0;
+    --shadow-dark: #d1d1d1;
+    --shadow-light: #ffffff;
+    --text-color: #333333;
+    --border-radius: 10px;
+    --padding: 15px;
+    --transition-speed: 0.3s;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  h2 {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 300;
+  }
+  
+  .health-passport-section {
+    width: 100%;
+    max-width: 400px;
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    box-shadow: 8px 8px 15px var(--shadow-dark), -8px -8px 15px var(--shadow-light);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .neumorphic-button {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1em;
+    padding: var(--padding);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: 8px 8px 15px var(--shadow-dark), -8px -8px 15px var(--shadow-light);
+    cursor: pointer;
+    transition: box-shadow var(--transition-speed);
+    text-transform: uppercase;
+  }
+  
+  .neumorphic-button:hover {
+    box-shadow: 6px 6px 10px var(--shadow-dark), -6px -6px 10px var(--shadow-light);
+  }
+  
